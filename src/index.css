@@ -1,0 +1,95 @@
+body{
+ background-color: black;
+ color: white;
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+}
+
+#root{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+p{
+    font-size: 1.2em;
+}
+
+.subtitle{
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    line-height: 0.9;
+    background: linear-gradient(90deg, rgba(113, 87, 195, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+h3{
+    font-size: 2.5em;
+    color: rgb(174, 149, 255);
+}
+
+section{
+    width: 80%;
+    margin: 100px auto;
+    max-width: 1500px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.model-relative-container,
+.gradient-relative-container {
+    position: relative;
+}
+
+/* ---------------------- */
+/* SCROLLBAR STYLES */
+/* ---------------------- */
+
+/* Para Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;          /* ancho del scroll vertical */
+  height: 8px;         /* alto del scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* la pista del scroll (fondo) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7157C3; /* el color lila */
+  border-radius: 4px;        /* bordes redondeados */
+}
+
+/* Para Firefox */
+html {
+  scrollbar-color: #7157C3 transparent;
+  scrollbar-width: thin; /* o auto si lo prefieres un poco más grueso */
+}
+
+.disable{
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .subtitle{
+    font-size: 3em;
+    margin: 0px;
+  }
+
+  section{
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  p{
+    font-size: 1.1em;
+  }
+}
