@@ -2,13 +2,12 @@ import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import FeaturedWorks from "./components/FeaturedWorks";
 import Skills from "./components/Skills";
-import WaveModel from './components/waveModel.jsx';
+import WaveModel from './components/WaveModel.jsx';
 import Footer from "./components/Footer.jsx";
 
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import useNavScrollTriggers from "./hooks/useNavScrollTrigger.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
