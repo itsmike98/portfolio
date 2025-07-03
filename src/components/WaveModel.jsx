@@ -62,7 +62,7 @@ function Model() {
   )
 }
 
-export default function waveModel() {
+export default function WaveModel() {
     return(
     <>
         <Canvas className='wave-model-canvas' camera={{ position: [0, 0, 0], fov: 20 }}>
