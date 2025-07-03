@@ -2,7 +2,7 @@ import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import FeaturedWorks from "./components/FeaturedWorks";
 import Skills from "./components/Skills";
-import WaveModel from './components/WaveModel.jsx';
+import waveModel from "./components/waveModel.jsx";
 import Footer from "./components/Footer.jsx";
 
 import gsap from "gsap";
