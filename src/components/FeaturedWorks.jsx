@@ -86,7 +86,7 @@ export default function FeaturedWorks() {
                             title={"Sosa"}
                             labels={["Wordpress", "Elementor", "php", "JavaScript", "CSS"]}
                             description={"Como parte del equipo de several.pro, participé en el desarrollo frontend de sosa.cat, una plataforma de productos alimenticios para la alta cocina. Mi rol se centró en implementar secciones clave de la web, utilizando WordPress con WP_Query y Custom Post Types para gestionar y mostrar dinámicamente la información de productos conforme al diseño proporcionado en Figma.\nMi trabajo consistió en convertir los diseños visuales en componentes funcionales y responsivos, asegurando una experiencia de usuario fluida y fiel a la identidad visual del cliente."}
-                            link={"sosa.cat"}
+                            link={"https://www.sosa.cat/"}
                         />
                     </SwiperSlide>
                     <SwiperSlide className={active === 0 ? "custom-slide" : ""}>
@@ -132,7 +132,7 @@ export default function FeaturedWorks() {
                             title={"Sosa"}
                             labels={["Wordpress", "Elementor", "php", "JavaScript", "CSS"]}
                             description={"Como parte del equipo de several.pro, participé en el desarrollo frontend de sosa.cat, una plataforma de productos alimenticios para la alta cocina. Mi rol se centró en implementar secciones clave de la web, utilizando WordPress con WP_Query y Custom Post Types para gestionar y mostrar dinámicamente la información de productos conforme al diseño proporcionado en Figma.\nMi trabajo consistió en convertir los diseños visuales en componentes funcionales y responsivos, asegurando una experiencia de usuario fluida y fiel a la identidad visual del cliente."}
-                            link={"sosa.cat"}
+                            link={"https://www.sosa.cat/"}
                         />
                     </SwiperSlide>
                 </Swiper>
