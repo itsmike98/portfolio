@@ -55,7 +55,7 @@ export default function WorkPopup({ index, isActive, images, title, labels, desc
                                 {description.split("\n").map((line, index) => (
                                     line.includes("#title") ? <p className="work-title">{line.replace("#title", "")}</p> : line.includes("#list") ? <p className="work-list">{line.replace('#list', "")}</p> : <p>{line}</p>
                                 ))}
-                                {link ? (<a href={link} target="_blank">Ir al proyecto</a>) : null}
+                                {link ? (<a href={link} className="project-button" target="_blank">Ir al proyecto</a>) : null}
                             </div>
                         </div>
                     </div>
