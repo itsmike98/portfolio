@@ -4,14 +4,12 @@ import FeaturedWorks from "./components/FeaturedWorks";
 import Skills from "./components/Skills";
 import WaveModel from "./components/WaveModel.jsx";
 import Footer from "./components/Footer.jsx";
-
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef, useState } from "react";
 import useNavScrollTriggers from "./hooks/useNavScrollTrigger.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 function App() {
 
@@ -34,7 +32,6 @@ function App() {
   );
 
   return (
-
     <>
       <div ref={homeRef}>
         <Header

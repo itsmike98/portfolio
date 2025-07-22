@@ -15,33 +15,33 @@ import gsap from 'gsap';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
-
-
 //Codigo del modelo3D
 function Model() {
-  const gltf = useLoader(GLTFLoader, '3d-models/Plano.glb')
-  const mixer = useRef()
-
+  const gltf = useLoader(GLTFLoader, '3d-models/Plano.glb');
+  const mixer = useRef();
   const diffuse = new THREE.TextureLoader().load('3d-models/plano uv.png');
   const clearCoatMap = new THREE.TextureLoader().load('3d-models/plano mask 3.png');
   const roughnessMap = new THREE.TextureLoader().load('3d-models/plano mask 5.png');
-
+  const opacity = new THREE.TextureLoader().load('3d-models/opacity.png');
 
   useEffect(() => {
     // Asignar nuevo material a todos los Meshes
     const newMaterial = new THREE.MeshPhysicalMaterial({
-      color: 'purple',
-      roughness: 1,
-      metalness: 1,
-      clearcoat: 1,
-      clearcoatRoughness: 1,
-      transmission: 0,
-      thickness: 0,
-      map: diffuse,
-      clearcoatMap: clearCoatMap,
-      roughnessMap: roughnessMap,
-      metalnessMap: clearCoatMap,
-    })
+  color: 'purple',
+  roughness: 1,
+  metalness: 1,
+  clearcoat: 1,
+  clearcoatRoughness: 1,
+  transmission: 0,
+  thickness: 0,
+  map: diffuse,
+  clearcoatMap: clearCoatMap,
+  roughnessMap: roughnessMap,
+  metalnessMap: clearCoatMap,
+  alphaMap: opacity,
+  transparent: true,
+  side: THREE.DoubleSide
+});
 
     gltf.scene.traverse((child) => {
       if (child.isMesh) {
@@ -69,7 +69,7 @@ function Model() {
     <primitive
       object={gltf.scene}
       position={[0, 0, -10]}
-      rotation={[0, 4.7, 0]}
+      rotation={[0, 4.8, -0.1]}
     />
   )
 }

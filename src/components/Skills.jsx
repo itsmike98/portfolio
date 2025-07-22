@@ -18,7 +18,6 @@ export default function Skills() {
     const gsapScope = useRef();
     const gsapScope2 = useRef();
 
-
     useGSAP(() => {
         const timeline = gsap.timeline({
             scrollTrigger: {
@@ -48,7 +47,6 @@ export default function Skills() {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, { scope: gsapScope });
-
     return (
         <>
             <section id='skills' className="skills-section">

@@ -63,17 +63,18 @@ header{
   align-items: center;
   position: relative;
 }
-
 .header-bottom-container .in-icon {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: transform 0.3s ease; /* Opcional: para suavizar la animación */
 }
 
-.header-bottom-container .in-icon:hover{
-transform: scale(1.1);
+.header-bottom-container .in-icon:hover {
+  transform: translateY(-50%) scale(1.1); /* ✅ Mantén el translateY + añade el scale */
 }
+
 
 .portait-photo-container{
   display: flex;

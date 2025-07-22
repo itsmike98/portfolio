@@ -8,7 +8,6 @@ import "../css/Skills.css";
 function Model() {
   const gltf = useLoader(GLTFLoader, '3d-models/Wave/Twister.glb')
   const mixer = useRef()
-
   const diffuse = new THREE.TextureLoader().load('3d-models/Wave/Diffuse.png');
   const roughnessMap = new THREE.TextureLoader().load('3d-models/Wave/Alpha-inverted.png');
   const alphaMap = useLoader(THREE.TextureLoader, '3d-models/Wave/Alpha.png');
