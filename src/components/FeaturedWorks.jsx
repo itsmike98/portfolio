@@ -109,9 +109,10 @@ export default function FeaturedWorks() {
                                 "works/Weather-web-app/weather-app-3.jpg",
                                 "works/Weather-web-app/weather-app-4.jpg",
                             ]}
-                            title={"Weather Forecast App"}
+                            title={"Weather Forecast Web App"}
                             labels={["React", "JavaScript", "CSS", "Chart.js", "OpenWeather API", "Figma"]}
                             description={"Weather Forecast App es una aplicación web de clima en tiempo real desarrollada con React y Vite, que consume datos directamente desde la API de OpenWeather. Su diseño responsive permite visualizar la información de forma clara tanto en dispositivos móviles como en escritorio.\n\nLa aplicación muestra la temperatura actual, la humedad y el estado del clima según la ubicación seleccionada, permitiendo buscar ciudades o lugares de todo el mundo. También incorpora un gráfico de temperatura por horas utilizando Chart.js, lo que mejora la visualización de la evolución del clima durante el día.\n\nEl diseño de la interfaz fue completamente creado por mí en Figma, cuidando todos los detalles de la experiencia de usuario (UX/UI). Se utilizó CSS puro para los estilos, con especial atención en la adaptabilidad de los componentes.\n#titleDetalles técnicos:\n#listAplicación desarrollada con React + Vite para una carga rápida y eficiente.\n#listConsumo de datos en tiempo real desde la API de OpenWeather.\n#listDiseño responsive adaptable a móvil, tablet y escritorio.\n#listGráfico de temperatura por horas creado con Chart.js.\n#listBúsqueda de ubicaciones a nivel global.\n#listDiseño UX/UI propio realizado con Figma.\nEste proyecto refleja mi enfoque completo en desarrollo frontend: desde el diseño inicial en Figma, pasando por la lógica de consumo de APIs y gestión de estados en React, hasta la implementación visual con CSS y visualización de datos."}
+                            link={"https://miguelg-weather-forecast.vercel.app/"}
                         />
                     </SwiperSlide>
                     <SwiperSlide className={active === 1 ? "custom-slide" : ""}>
